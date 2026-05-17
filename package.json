@@ -11,12 +11,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@keshavsoft/kschema": "^1.17.12",
+    "@keshavsoft/kschema": "^1.18.1",
     "body-parser": "^2.2.0",
     "express": "^5.1.0"
   },
   "devDependencies": {
-    "@keshavsoft/kschema-api-gen": "^1.9.2",
+    "@keshavsoft/kschema-api-gen": "^1.10.1",
     "@keshavsoft/kschema-cli-samples": "^1.15.2"
   }
 }
