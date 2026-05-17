@@ -1,0 +1,24 @@
+{
+    "journals": {
+        "columnsConfig": [
+            {
+                "columnName": "VoucherName"
+            },
+            {
+                "columnName": "Date"
+            },
+            {
+                "columnName": "AccountName"
+            },
+            {
+                "columnName": "Description"
+            },
+            {
+                "columnName": "Credit"
+            },
+            {
+                "columnName": "Debit"
+            }
+        ]
+    }
+}

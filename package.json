@@ -1,0 +1,22 @@
+{
+  "name": "AccountsV1",
+  "version": "1.1.1",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --env-file=.env app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@keshavsoft/kschema": "^1.17.12",
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@keshavsoft/kschema-api-gen": "^1.9.2",
+    "@keshavsoft/kschema-cli-samples": "^1.15.2"
+  }
+}

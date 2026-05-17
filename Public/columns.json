@@ -1,0 +1,47 @@
+{
+    "journals": {
+        "columnsConfig": [
+            {
+                "columnName": "Date",
+                "cellConfig": {
+                    "width": "50px"
+                }
+            },
+            {
+                "columnName": "AccountName",
+                "cellConfig": {
+                    "width": "100px"
+                },
+                "isSearchable": true
+            },
+            {
+                "columnName": "Description",
+                "cellConfig": {
+                    "width": "150px"
+                }
+            },
+            {
+                "columnName": "Credit",
+                "cellConfig": {
+                    "width": "50px",
+                    "rightAlign": true,
+                    "showThousandsSeperator": true,
+                    "tableFooter": {
+                        "showTotal": true
+                    }
+                }
+            },
+            {
+                "columnName": "Debit",
+                "cellConfig": {
+                    "width": "50px",
+                    "rightAlign": true,
+                    "showThousandsSeperator": true,
+                    "tableFooter": {
+                        "showTotal": true
+                    }
+                }
+            }
+        ]
+    }
+}
