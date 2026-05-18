@@ -1,1 +1,1 @@
-GET http://localhost:3000/Api/V1/journals/Distinct
+GET http://localhost:3000/Api/V1/journals/Distinct/AccountName

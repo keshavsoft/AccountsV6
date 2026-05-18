@@ -10,6 +10,6 @@ const router = express.Router();
 
 router.post('/FilterColumns', express.json(), (req, res) => filterColumnsFunc({ req, res, inTableName: tableName }));
 router.get('/ShowAll', (req, res) => getFunc({ res, inTableName: tableName }));
-router.get('/Distinct', (req, res) => Distinct({ res, inTableName: tableName }));
+router.get('/Distinct/:columnName', (req, res) => Distinct({ req, res, inTableName: tableName }));
 
 export { router };

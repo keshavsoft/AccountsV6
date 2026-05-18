@@ -5,7 +5,9 @@
                 "columnName": "Date",
                 "cellConfig": {
                     "width": "50px"
-                }
+                },
+                "isSearchable": true,
+                "dataListSource": "Dates.Date"
             },
             {
                 "columnName": "AccountName",

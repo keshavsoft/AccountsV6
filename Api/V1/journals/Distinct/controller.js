@@ -1,9 +1,14 @@
 import { fromJsonPath } from './service.js';
 import { ConflictError, StorageError } from './errors.js';
 
-const getFunc = ({ res, inTableName }) => {
+const getFunc = ({ req, res, inTableName }) => {
     try {
-        const message = fromJsonPath({ inTableName });
+        const columnName = req.params.columnName;
+
+        const message = fromJsonPath({
+            inTableName,
+            inColumnName: columnName
+        });
 
         res.type("application/json").send(message);
     } catch (err) {
