@@ -1,6 +1,6 @@
 {
-  "name": "AccountsV1",
-  "version": "1.1.1",
+  "name": "AccountsV6",
+  "version": "1.1.2",
   "description": "",
   "main": "app.js",
   "type": "module",

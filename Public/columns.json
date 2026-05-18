@@ -12,7 +12,8 @@
                 "cellConfig": {
                     "width": "100px"
                 },
-                "isSearchable": true
+                "isSearchable": true,
+                "dataListSource": "AccountNames.AccountName"
             },
             {
                 "columnName": "Description",
