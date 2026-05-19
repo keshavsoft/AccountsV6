@@ -16,7 +16,7 @@
     "express": "^5.1.0"
   },
   "devDependencies": {
-    "@keshavsoft/kschema-api-gen": "^1.10.1",
+    "@keshavsoft/kschema-api-gen": "^1.11.1",
     "@keshavsoft/kschema-cli-samples": "^1.15.2",
     "@keshavsoft/kschema-api-check": "^1.12.1",
     "@keshavsoft/kschema-api-gen-actions": "^1.16.2"
