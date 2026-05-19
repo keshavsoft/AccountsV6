@@ -6,7 +6,7 @@
                 "cellConfig": {
                     "width": "50px"
                 },
-                "isSearchable": true,
+                "isSearchable": false,
                 "dataListSource": "Dates.Date"
             },
             {
@@ -14,7 +14,7 @@
                 "cellConfig": {
                     "width": "100px"
                 },
-                "isSearchable": true,
+                "isSearchable": false,
                 "dataListSource": "AccountNames.AccountName"
             },
             {
@@ -30,7 +30,10 @@
                     "rightAlign": true,
                     "showThousandsSeperator": true,
                     "tableFooter": {
-                        "showTotal": true
+                        "showTotal": true,
+                        "showBalance": true,
+                        "evalBalance": "Credit-Debit",
+                        "showBalanceIfPositive": true
                     }
                 }
             },
@@ -41,7 +44,10 @@
                     "rightAlign": true,
                     "showThousandsSeperator": true,
                     "tableFooter": {
-                        "showTotal": true
+                        "showTotal": true,
+                        "showBalance": true,
+                        "evalBalance": "Debit-Credit",
+                        "showBalanceIfPositive": true
                     }
                 }
             }
