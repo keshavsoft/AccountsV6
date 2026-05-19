@@ -22,7 +22,7 @@ export const getDefaultKSTableConfig = () => {
         },
 
         options: {
-            showFilterVerticalForm: false,
+            showFilterVerticalForm: true,
 
             firstRow: {
                 showSearch: false
@@ -46,6 +46,9 @@ export const getDefaultKSTableConfig = () => {
                 showFooter: false,
                 showTotals: true,
                 showBalance: true,
+                showTotalsForSearch: true,
+                showBalanceForSearch: true,
+                showFooterRows: true,
 
                 footer: {
                     showDataList: true

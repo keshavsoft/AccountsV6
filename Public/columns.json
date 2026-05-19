@@ -6,7 +6,7 @@
                 "cellConfig": {
                     "width": "50px"
                 },
-                "isSearchable": false,
+                "isSearchable": true,
                 "dataListSource": "Dates.Date"
             },
             {

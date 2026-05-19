@@ -6,7 +6,7 @@ export const callKSTable = async (config) => {
     };
 
     const { initShowTable } =
-        await import("../../../../../KSTableAi/V40/entry.js");
+        await import("../../../../../KSTableAi/V41/entry.js");
 
     return initShowTable(config);
 };
