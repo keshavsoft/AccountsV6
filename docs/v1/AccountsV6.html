@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AccountsV6</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #071126;
+            color: white;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .hero {
+            padding: 60px 0 40px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            color: #4cb4ff;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #d6d6d6;
+            max-width: 850px;
+        }
+
+        .section {
+            padding: 40px 0;
+        }
+
+        .section-title {
+            font-size: 34px;
+            color: #4cb4ff;
+            border-left: 5px solid #4cb4ff;
+            padding-left: 15px;
+            margin-bottom: 25px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #13213f;
+            padding: 25px;
+            border-radius: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .card h3 {
+            color: #7f8cff;
+            margin-bottom: 12px;
+            font-size: 22px;
+        }
+
+        .card p {
+            color: #d7d7d7;
+            font-size: 16px;
+        }
+
+        .command-box {
+            background: black;
+            padding: 18px;
+            border-radius: 10px;
+            margin-top: 20px;
+            color: #46dfff;
+            overflow-x: auto;
+            font-size: 17px;
+        }
+
+        ul {
+            margin-top: 18px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #d7d7d7;
+            font-size: 17px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 35px 0;
+            color: #bcbcbc;
+            font-size: 15px;
+        }
+
+        @media(max-width:768px) {
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <h1>AccountsV6</h1>
+
+            <p>
+                AccountsV6 is a modular accounting and table-management ecosystem
+                built using reusable KeshavSoft npm modules, dynamic KSTable integration,
+                configurable columns, and version-based frontend workflows.
+            </p>
+
+        </section>
+
+        <!-- FEATURES -->
+
+        <section class="section">
+
+            <h2 class="section-title">
+                Core Features
+            </h2>
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <h3>KSTable Integration</h3>
+
+                    <p>
+                        Dynamically render searchable, filterable, and configurable
+                        tables using reusable KSTable workflows.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>Columns Driven UI</h3>
+
+                    <p>
+                        Configure table columns, totals, balances,
+                        search behavior, and layouts using JSON configuration.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>Version Based Frontend</h3>
+
+                    <p>
+                        Supports frontend versions like v5, v7, v8, and v9
+                        for scalable frontend evolution.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>Reusable API Structure</h3>
+
+                    <p>
+                        Generate scalable API endpoints using reusable
+                        KeshavSoft npm generators.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- API GENERATION -->
+
+        <section class="section">
+
+            <h2 class="section-title">
+                Generate APIs
+            </h2>
+
+            <div class="card">
+
+                <p>
+                    Generate reusable endpoint structures dynamically
+                    using KeshavSoft npm modules.
+                </p>
+
+                <div class="command-box">
+                    npx @keshavsoft/kschema-api-gen CreateApi Api/V2/sellers/ShowAll
+                </div>
+
+                <ul>
+                    <li>✔ Generates endpoint folders</li>
+                    <li>✔ Creates controller and service files</li>
+                    <li>✔ Supports version-based APIs</li>
+                    <li>✔ Reusable backend architecture</li>
+                </ul>
+
+            </div>
+
+        </section>
+
+        <!-- FRONTEND -->
+
+        <section class="section">
+
+            <h2 class="section-title">
+                Frontend Workflow
+            </h2>
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <h3>Lifecycle Based UI</h3>
+
+                    <p>
+                        Organized frontend flow using FormLoad,
+                        DomContentLoaded, and modular UI handlers.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>Dynamic Menu System</h3>
+
+                    <p>
+                        Build reusable menu items dynamically
+                        using configurable frontend components.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>Dynamic Endpoint Binding</h3>
+
+                    <p>
+                        Frontend tables automatically connect
+                        with configurable API endpoints.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>Reusable Table Config</h3>
+
+                    <p>
+                        Configure columns, searches, datalists,
+                        balances, and totals without rewriting UI logic.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- USE CASES -->
+
+        <section class="section">
+
+            <h2 class="section-title">
+                Use Cases
+            </h2>
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <h3>Accounting Applications</h3>
+
+                    <p>
+                        Build journals, ledgers, sellers,
+                        balances, and bookkeeping systems.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>Dynamic Data Tables</h3>
+
+                    <p>
+                        Create searchable, filterable,
+                        and configurable table-driven applications.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>Reusable Admin Panels</h3>
+
+                    <p>
+                        Build scalable admin-style applications
+                        using reusable KSTable workflows.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>Scalable Backend APIs</h3>
+
+                    <p>
+                        Generate reusable backend APIs
+                        for multiple resources and modules.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ADVANTAGES -->
+
+        <section class="section">
+
+            <h2 class="section-title">
+                Why Developers Use AccountsV6
+            </h2>
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <h3>Less Boilerplate</h3>
+
+                    <p>
+                        Avoid repeatedly creating routes,
+                        controllers, services, and table logic manually.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>Reusable Workflows</h3>
+
+                    <p>
+                        Reuse frontend and backend workflows
+                        across multiple applications.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>Scalable Architecture</h3>
+
+                    <p>
+                        Designed for modular and scalable
+                        application development.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>Faster Development</h3>
+
+                    <p>
+                        Focus directly on business logic
+                        instead of repetitive setup work.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- VISION -->
+
+        <section class="section">
+
+            <h2 class="section-title">
+                Vision
+            </h2>
+
+            <div class="card">
+
+                <p>
+                    AccountsV6 aims to provide a reusable ecosystem where
+                    developers can dynamically generate APIs, CRUD systems,
+                    configurable tables, and scalable backend applications
+                    using reusable KeshavSoft npm modules.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- FOOTER -->
+
+        <div class="footer">
+
+            © 2026 KeshavSoft • AccountsV6
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
