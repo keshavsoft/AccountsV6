@@ -13,13 +13,14 @@
   "dependencies": {
     "@keshavsoft/kschema": "^1.18.1",
     "body-parser": "^2.2.0",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "ws": "^8.20.1"
   },
   "devDependencies": {
-    "@keshavsoft/kschema-api-gen": "^1.11.1",
-    "@keshavsoft/kschema-cli-samples": "^1.15.2",
     "@keshavsoft/kschema-api-check": "^1.12.3",
+    "@keshavsoft/kschema-api-gen": "^1.11.1",
     "@keshavsoft/kschema-api-gen-actions": "^1.16.3",
+    "@keshavsoft/kschema-cli-samples": "^1.15.2",
     "tailwind-todo": "^1.3.5"
   }
 }
