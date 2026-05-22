@@ -65,6 +65,38 @@
             color: #94a3b8;
         }
     </style>
+     <script>
+    const socket = new WebSocket("ws://localhost:3000");
+
+    socket.onopen = () => {
+        console.log("Connected To WebSocket");
+    };
+
+    socket.onmessage = (event) => {
+
+        console.log("Message From Server:", event.data);
+
+        const div = document.createElement("div");
+
+        div.className = "card";
+
+        div.innerHTML = `
+            <h2>📡 WebSocket Message</h2>
+            <p>${event.data}</p>
+        `;
+
+        document.querySelector(".container").prepend(div);
+    };
+
+    socket.onclose = () => {
+        console.log("Disconnected");
+    };
+
+    setTimeout(() => {
+        socket.send("Hello From Browser");
+    }, 2000);
+
+</script>
 </head>
 
 <body>
