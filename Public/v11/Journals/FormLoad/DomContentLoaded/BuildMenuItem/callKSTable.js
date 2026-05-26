@@ -1,12 +1,8 @@
 export const callKSTable = async (config) => {
-    if (window.KSTable?.initTableOnly) {
+    if (window?.KSTable?.initShowTable) {
         console.log("loaded from cdn");
 
-        return window.KSTable.initTableOnly(config);
+        return window.KSTable.initShowTable(config);
     };
-
-    const { initShowTable } =
-        await import("../../../../../KSTableAi/V41/entry.js");
-
-    return initShowTable(config);
+    return false;
 };
